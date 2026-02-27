@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MARSHA SPORTS ARCADE | MSA Tennis Academy Kolkata</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #0b3d91;
+    color: white;
+    padding: 10px 30px;
+}
+
+.logo-container img {
+    height: 180px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.academy-title h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+.academy-title p {
+    margin: 5px 0 0 0;
+    font-size: 24px;
+}
+
+        header {
+            background: #0b3d91;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #062c6b;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+       .hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1554068865-24cecd4e34b8') center/cover no-repeat;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #0b3d91;
+            margin-bottom: 20px;
+        }
+
+        .programs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #0b3d91;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            background: #ffd700;
+            color: black;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #ffcc00;
+        }
+
+        @media(max-width:768px){
+            .programs{
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h1{
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="logo-container">
+        <img src="logo.png" alt="MSA Logo">
+    </div>
+    <div class="academy-title">
+        <h1>MARSHA SPORTS ARCADE (MSA)</h1>
+        <p>Professional Tennis Training Academy | Kolkata</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Train. Compete. Excel.</h1>
+    <p>Building Champions in Kolkata</p>
+    <br>
+    <a href="#contact" class="btn">Join MSA Today</a>
+</section>
+
+<section class="section" id="about">
+    <h2>About MSA</h2>
+    <p>
+        MARSHA SPORTS ARCADE (MSA) is a premier tennis academy in Kolkata dedicated to
+        nurturing young talent and professional athletes. Our structured training programs,
+        certified coaches, and competitive exposure help players reach their highest potential.
+    </p>
+</section>
+
+<section class="section" id="programs">
+    <h2>Our Programs</h2>
+
+    <div class="programs">
+        <div class="card">
+            <h3>Beginner Program</h3>
+            <p>Introduction to tennis fundamentals for kids and beginners.</p>
+        </div>
+
+        <div class="card">
+            <h3>Intermediate Training</h3>
+            <p>Skill development, match play strategies, and fitness training.</p>
+        </div>
+
+        <div class="card">
+            <h3>Advanced & Competitive</h3>
+            <p>High-performance coaching for tournament-level players.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="facilities">
+    <h2>Facilities</h2>
+    <p>
+        ✔ Professional Tennis Courts<br>
+        ✔ Certified Coaches<br>
+        ✔ Fitness & Conditioning Training<br>
+        ✔ Tournament Preparation<br>
+        ✔ Evening & Weekend Batches
+    </p>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>
+        📍 Location: Jagaddal, Kolkata, West Bengal<br>
+        📞 Phone: +91-7980800854<br>
+        📧 Email: marshasportstennis@gmail.com
+    </p>
+    <br>
+    <a href="mailto:marshasportstennis@gmail.com" class="btn">Enroll Now</a>
+</section>
+
+<footer>
+    <p>© 2026 MARSHA SPORTS ARCADE (MSA) | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
