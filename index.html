@@ -6,6 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
+        
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: #0b3d91;
+}
+        
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -228,16 +266,20 @@
     <img src="Court1.JPG" alt="MSA Synthetic Tennis Court" class="court-image">
 </section>
 
-    <section class="section" id="gallery">
-    <h2>MSA Photo Gallery</h2>
+<section class="section" id="gallery">
+<h2>MSA Photo Gallery</h2>
 
-    <div class="gallery">
-      
-        <img src="Court3.jpeg" alt="MSA Court 2">
+<div class="slider">
+<div class="slides">
+ <img src="Court3.jpeg" alt="MSA Court 2">
         <img src="Court4.jpeg" alt="MSA Court 3">
         <img src="Court5.jpeg" alt="MSA Court 4">
         <img src="Court6.jpeg" alt="MSA Court 5">
-    </div>
+</div>
+
+<button class="prev" onclick="changeSlide(-1)">❮</button>
+<button class="next" onclick="changeSlide(1)">❯</button>
+</div>
 </section>
 
 <section class="section" id="contact">
